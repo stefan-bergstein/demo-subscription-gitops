@@ -3,5 +3,7 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: stefan-test-subs
+  labels:
+    test: "08:38"
 
       
