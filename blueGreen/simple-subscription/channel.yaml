@@ -1,12 +1,10 @@
----
 apiVersion: apps.open-cluster-management.io/v1
 kind: Channel
 metadata:
-  name: gitops
+  name: gitops-channel
   namespace: stefan-tmp
 spec:
   type: GitHub
   pathname: https://github.com/stefan-bergstein/demo-subscription-gitops.git
 
-  #secretRef:
-  #  name: my-github-secret
+

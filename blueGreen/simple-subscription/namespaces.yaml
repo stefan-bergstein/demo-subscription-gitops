@@ -1,0 +1,10 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: stefan-tmp
+labels:
+  test: "08:38"
+
+
+      

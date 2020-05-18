@@ -1,0 +1,16 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: simple-nginx-subscription
+  namespace: stefan-tmp
+  labels:
+    app: nginx-deployment
+  annotations:
+    apps.open-cluster-management.io/github-path: blueGreen/nginx/deployment
+    apps.open-cluster-management.io/github-branch: master
+spec:
+  channel: stefan-tmp/gitops-channel
+  placement:
+    local: true
+
+
